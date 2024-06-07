@@ -20,7 +20,7 @@ import { setUser, userSelector } from "../../features/auth";
 import { Link } from "react-router-dom";
 import useStyles from "./styles.js";
 import { useTheme } from "@mui/material/styles";
-import { Sidebar } from "../index";
+import { Sidebar, Search } from "../index";
 import { fetchToken, createSessionId, moviesApi } from "../../utils";
 import { useContext } from "react";
 const NavBar = () => {
@@ -81,7 +81,9 @@ const NavBar = () => {
             {theme.palette.mode === "dark" ? <Brightness7 /> : <Brightness4 />}
           </IconButton>
 
-
+          {/* for device larger than 600px, show Search after light and dark icon button  */}
+          {!isMobile && <Search />}
+          {isMobile && <Search />}
 
           <div>
             {/* for unauthenticated user show login button and for authenticated user show my movies */}
