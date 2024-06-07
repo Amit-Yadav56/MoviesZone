@@ -5,10 +5,13 @@ import { useRef } from "react";
 import useStyles from "./components/styles";
 import { NavBar } from "./components";
 
+import useAlan from "./components/Alan";
+
 
 function App() {
   const classes = useStyles();
   const alanBtnContainer = useRef();
+  useAlan();
   return (
     <div className={classes.root}>
       <CssBaseline />

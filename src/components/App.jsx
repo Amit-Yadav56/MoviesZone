@@ -4,6 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 import useStyles from './styles';
 import { NavBar } from './index';
 
+import useAlan from './Alan';
+
 
 
 const App = () => {
@@ -20,6 +22,7 @@ const App = () => {
 
       <div ref={alanBtnContainer} />
     </div>
+
   )
 }
 
