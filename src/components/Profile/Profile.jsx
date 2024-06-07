@@ -5,7 +5,6 @@ import { ExitToApp } from "@mui/icons-material";
 import { userSelector } from "../../features/auth.js";
 import useStyles from "./style.js";
 import { useGetListQuery } from "../../services/TMDB.js";
-import { RatedCards } from "..";
 
 const Profile = () => {
   const { user } = useSelector(userSelector);
@@ -52,8 +51,7 @@ const Profile = () => {
         </Typography>
       ) : (
         <Box>
-          <RatedCards title="Favorite Movies" data={favoriteMovies} />
-          <RatedCards title="Watchlist Movies" data={watchlistMovies} />
+
         </Box>
       )}
 

@@ -1,12 +1,14 @@
 import "./App.css";
 import { CssBaseline } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
-import { useRef } from "react";
+import {
+  Movies,
+  NavBar,
+  Profile,
+} from "./components/index";
 import useStyles from "./components/styles";
-import { NavBar } from "./components";
-
 import useAlan from "./components/Alan";
-
+import { useRef } from "react";
 
 function App() {
   const classes = useStyles();
@@ -18,13 +20,16 @@ function App() {
       <NavBar />
       <main className={classes.content}>
         <div className={classes.toolbar}>
-
+          <Routes>
+            <Route path="/" element={<Movies />} />
+            <Route path="/approved" element={<Movies />} />
+            <Route path="/profile/:id" element={<Profile />} />
+          </Routes>
         </div>
       </main>
       <div ref={alanBtnContainer} />
     </div>
   );
 }
-
 
 export default App;
