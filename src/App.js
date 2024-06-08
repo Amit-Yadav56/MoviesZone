@@ -5,6 +5,8 @@ import {
   Movies,
   NavBar,
   Profile,
+  Actors,
+  Errorpage
 } from "./components/index";
 import useStyles from "./components/styles";
 import useAlan from "./components/Alan";
@@ -24,6 +26,9 @@ function App() {
             <Route path="/" element={<Movies />} />
             <Route path="/approved" element={<Movies />} />
             <Route path="/profile/:id" element={<Profile />} />
+
+            <Route path="/actors/:id" element={<Actors />} />
+            <Route path="*" element={<Errorpage />} />
           </Routes>
         </div>
       </main>

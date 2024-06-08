@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { CssBaseline } from '@mui/material';
 import { Routes, Route } from 'react-router-dom';
-import { Movies, MovieInfo, Navbar, Profile } from './index';
+import { Movies, MovieInfo, Navbar, Profile, Actors } from './index';
 
 import useStyles from './styles';
 import useAlan from './Alan';
@@ -25,6 +25,8 @@ const App = () => {
           <Route exact path='/' element={<Movies />} />
           <Route exact path='/approved' element={<Movies />} />
           <Route exact path='/movie/:id' element={<MovieInfo />} />
+
+          <Route exact path='/actors/:id' element={<Actors />} />
           <Route exact path='/profile/:id' element={<Profile />} />
         </Routes>
       </main>
