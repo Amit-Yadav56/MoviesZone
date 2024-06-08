@@ -11,3 +11,4 @@ export { default as Errorpage } from "./Errorpage/Errorpage"
 export { default as RatedCards } from "./RatedCards/RatedCards"
 export { default as Movies } from "./Movies/Movies";
 export { default as NavBar } from "./Navbar/Navbar";
+export { default as MovieInfo } from "./MovieInfo/MovieInfo";
