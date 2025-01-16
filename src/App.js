@@ -10,20 +10,20 @@ import {
   MovieInfo
 } from "./components/index";
 import useStyles from "./components/styles";
-import useAlan from "./components/Alan";
+// import useAlan from "./components/Alan";
 import { useRef } from "react";
 
 function App() {
-  const classes = useStyles();
+  const classes = useStyles();  
   const alanBtnContainer = useRef();
-  useAlan();
+  // useAlan();
   return (
     <div className={classes.root}>
       <CssBaseline />
       <NavBar />
       <main className={classes.content}>
         <div className={classes.toolbar}>
-          <Routes>
+          <Routes>``
             <Route path="/" element={<Movies />} />
             <Route path="/approved" element={<Movies />} />
             <Route path="/profile/:id" element={<Profile />} />
@@ -34,7 +34,7 @@ function App() {
           </Routes>
         </div>
       </main>
-      <div ref={alanBtnContainer} />
+      {/* <div ref={alanBtnContainer} /> */}
     </div>
   );
 }

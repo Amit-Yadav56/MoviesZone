@@ -4,15 +4,15 @@ import { Routes, Route } from 'react-router-dom';
 import { Movies, MovieInfo, Navbar, Profile, Actors } from './index';
 
 import useStyles from './styles';
-import useAlan from './Alan';
+// import useAlan from './Alan';
 
 
 
 const App = () => {
 
   const classes = useStyles();
-  const alanBtnContainer = useRef();
-  useAlan();
+  // const alanBtnContainer = useRef();
+  // useAlan();
 
   return (
 
@@ -30,7 +30,7 @@ const App = () => {
           <Route exact path='/profile/:id' element={<Profile />} />
         </Routes>
       </main>
-      <div ref={alanBtnContainer} />
+      {/* <div ref={alanBtnContainer} /> */}
     </div>
   )
 }
