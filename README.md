@@ -14,7 +14,8 @@ MovieMaze is also a great resource for movie industry professionals, providing a
 
 So what are you waiting for? Dive into the fascinating world of movies with MovieMaze, and discover your next favorite film today!
 
-![1](https://user-images.githubusercontent.com/121817168/233188935-bd7cf388-d76c-4ab2-8c3d-4f9c45ae5858.png)
+![image](https://github.com/user-attachments/assets/5bc337ce-ef90-427a-9133-d4f3603c3939)
 
-![2](https://user-images.githubusercontent.com/121817168/233188968-24267014-6c13-4dd7-83ad-62ce6b2ab257.png)
+![image](https://github.com/user-attachments/assets/b68481b5-ab8e-4c84-8ff6-8cbeb06e520f)
+
 
